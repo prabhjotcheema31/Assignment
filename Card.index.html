@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fdf2f8;
+            color: #334155;
+        }
+
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #831843;
+            color: white;
+            padding: 18px 25px;
+            text-align: center;
+        }
+
+        .top-bar h2 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 35px 15px 100px;
+        }
+
+         .profile-card {
+            width: 300px;
+            padding: 25px;
+            margin: 10px;
+            border: 2px solid;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px #00000015;
+        }
+
+         .prabhjot {
+            background: #eff6ff;
+            border-color: #3b82f6;
+        }
+
+        .saniya {
+            background: #fdf2f8;
+            border-color: #ec4899;
+        }
+
+       .avatar {
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            border: 4px solid white;
+            box-shadow: 0 3px 10px #00000020;
+        }
+
+        .prabhjot .avatar {
+            background: #2563eb;
+        }
+
+        .saniya .avatar {
+            background: #db2777;
+        }
+
+        .profile-card h3 {
+            font-size: 24px;
+            margin: 10px 0 5px;
+        }
+
+        .role {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+       .bio {
+            height: 125px;
+            overflow: auto;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            background: white;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+       .contact {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .prabhjot .contact {
+            background: #2563eb;
+        }
+
+        .saniya .contact {
+            background: #db2777;
+        }
+
+        .contact:hover {
+            opacity: 0.8;
+        }
+
+       .add-button {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            z-index: 200;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            background: #831843;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px #00000030;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+     <header class="top-bar">
+        <h2>Our Profile Cards</h2>
+        <p>Welcome to Prabhjot & Saniya's Profiles!</p>
+    </header>
+
+    <main class="container">
+
+     <section class="profile-card prabhjot">
+
+            <div class="avatar" aria-label="Prabhjot">
+                P
+            </div>
+
+            <h3>Prabhjot Kaur</h3>
+            <p class="role">Student | Future Developer</p>
+
+            <div class="bio">
+                Hello! My name is Prabhjot.
+                I am a student who enjoys learning new things
+                and improving my technical skills.
+                I am interested in web development, coding,
+                and creating beautiful websites.
+                My goal is to become a successful developer
+                and make my dreams come true.
+                I believe in working hard and learning every day!
+            </div>
+
+            <a class="contact" href="mailto:prabhjotcheema317@gmail.com">
+                Contact Me
+            </a>
+
+        </section>
+
+        <section class="profile-card saniya">
+
+            <div class="avatar" aria-label="Saniya">
+                S
+            </div>
+
+            <h3>Saniya</h3>
+            <p class="role">Student | Creative Learner</p>
+
+            <div class="bio">
+                Hi! My name is Saniya.
+                I love learning new skills and exploring
+                creative ideas.
+                I enjoy technology, designing, and discovering
+                new ways to solve problems.
+                My dream is to achieve my goals and make
+                my family proud.
+                I believe that confidence, creativity, and
+                hard work are the keys to success!
+            </div>
+
+            <a class="contact" href="mailto:saniya345@gmail.com">
+                Contact Me
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made by Prabhjot </p>
+    </footer>
+
+   <button
+        class="add-button"
+        aria-label="Add profile"
+    >+</button>
+
+</body>
+</html>
